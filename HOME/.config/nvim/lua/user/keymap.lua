@@ -38,6 +38,12 @@ vim.keymap.set('',  ',f',        vim.lsp.buf.format)
 vim.keymap.set('',  ',w',        ':w<Enter>')
 vim.keymap.set('',  ',q',        ':q<Enter>')
 
+-- Use treesitter to fold
+vim.keymap.set('', ',z', function()
+  vim.opt.foldmethod = 'expr'
+  vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+end)
+
 -- Keymaps for treesitter incremental selection are defined in the treesitter.lua file.
 -- init_selection = "<Down>",
 -- node_incremental = "<Right>",
