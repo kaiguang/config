@@ -75,6 +75,12 @@ require("nvim-tree").setup({
     enable = true,
     show_on_dirs = true,
   },
+  filters = {
+    dotfiles = false,
+  },
+  git = {
+    ignore = false,
+  },
 })
 
 -- 👇👇👇👇👇 Open nvim-tree on start-up
