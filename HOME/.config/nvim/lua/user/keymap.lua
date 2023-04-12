@@ -25,21 +25,21 @@ vim.keymap.set('',  '<Space>l',  ':BufferLineCloseLeft<Enter>')
 vim.keymap.set('',  '<Space>r',  ':BufferLineCloseRight<Enter>')
 
 -- LSP
-vim.keymap.set('',  ',h',        vim.lsp.buf.hover)
-vim.keymap.set('',  ',d',        vim.lsp.buf.definition)
-vim.keymap.set('',  ',c',        vim.lsp.buf.code_action)
-vim.keymap.set('',  ',e',        vim.lsp.buf.declaration)
-vim.keymap.set('',  ',r',        vim.lsp.buf.references)
-vim.keymap.set('',  ',<Enter>',  vim.lsp.buf.rename)
-vim.keymap.set('',  ',i',        vim.lsp.buf.implementation)
-vim.keymap.set('',  ',o',        vim.diagnostic.open_float)
-vim.keymap.set('',  ',f',        vim.lsp.buf.format)
+vim.keymap.set('',  '<Space>h',        vim.lsp.buf.hover)
+vim.keymap.set('',  '<Space>d',        vim.lsp.buf.definition)
+vim.keymap.set('',  '<Space>c',        vim.lsp.buf.code_action)
+vim.keymap.set('',  '<Space>e',        vim.lsp.buf.declaration)
+vim.keymap.set('',  '<Space>r',        vim.lsp.buf.references)
+vim.keymap.set('',  '<Space>Enter>',   vim.lsp.buf.rename)
+vim.keymap.set('',  '<Space>i',        vim.lsp.buf.implementation)
+vim.keymap.set('',  '<Space>o',        vim.diagnostic.open_float)
+vim.keymap.set('',  '<Space>m',        vim.lsp.buf.format)
 
-vim.keymap.set('',  ',w',        ':w<Enter>')
-vim.keymap.set('',  ',q',        ':q<Enter>')
+vim.keymap.set('',  '<Space>w',        ':w<Enter>')
+vim.keymap.set('',  '<Space>q',        ':q<Enter>')
 
 -- Use treesitter to fold
-vim.keymap.set('', ',z', function()
+vim.keymap.set('', '<Space>z', function()
   vim.opt.foldmethod = 'expr'
   vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 end)
