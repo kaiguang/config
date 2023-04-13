@@ -47,14 +47,14 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"                                                                        -- Lua functions
   use "nvim-tree/nvim-web-devicons"                                                                  -- Colored icons
   use "godlygeek/tabular"                                                                            -- Align text
-  use 'JoosepAlviste/nvim-ts-context-commentstring'                                                  -- Set commentstring based on cursor location in file
-  use 'numToStr/Comment.nvim'                                                                        -- Smart comment
+  use "JoosepAlviste/nvim-ts-context-commentstring"                                                  -- Set commentstring based on cursor location in file
+  use "numToStr/Comment.nvim"                                                                        -- Smart comment
   use "nvim-treesitter/nvim-treesitter-context"                                                      -- Show code context
   use "rebelot/kanagawa.nvim"                                                                        -- Colorscheme
-  use 'nvim-tree/nvim-tree.lua'                                                                      -- File explorer
+  use "nvim-tree/nvim-tree.lua"                                                                      -- File explorer
   use { "nvim-telescope/telescope.nvim", tag = "0.1.1", requires = { { "nvim-lua/plenary.nvim" } } } -- Fuzzy finder
   use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } }      -- Statusline
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}            -- Tabline
+  use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }          -- Tabline
   use { "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }        -- Autopair
 
   -- LSP
@@ -73,18 +73,18 @@ return packer.startup(function(use)
   }
 
   -- Completion
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
-  use 'L3MON4D3/LuaSnip'
-  use 'saadparwaiz1/cmp_luasnip'
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "hrsh7th/nvim-cmp"
+  use "L3MON4D3/LuaSnip"
+  use "saadparwaiz1/cmp_luasnip"
 
   -- Git
-  use 'f-person/git-blame.nvim'
-  use {'lewis6991/gitsigns.nvim', config = function() require('gitsigns').setup() end }
-  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use "f-person/git-blame.nvim"
+  use { "lewis6991/gitsigns.nvim", config = function() require("gitsigns").setup() end }
+  use { "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
