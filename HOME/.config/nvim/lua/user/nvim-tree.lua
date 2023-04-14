@@ -69,6 +69,15 @@ end
 require("nvim-tree").setup({
   view = {
     width = 50,
+    number = true,
+  },
+  update_focused_file = {
+    enable = true,
+  },
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
   },
   on_attach = M.on_attach,
   diagnostics = {
