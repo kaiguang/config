@@ -56,6 +56,7 @@ return packer.startup(function(use)
   use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } }      -- Statusline
   use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }          -- Tabline
   use { "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }        -- Autopair
+  use "github/copilot.vim"
 
   -- LSP
   use "neovim/nvim-lspconfig"             -- Configs for Neovim LSP
