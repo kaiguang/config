@@ -14,7 +14,7 @@ unzip \
 wget \
 zsh
 RUN git clone https://github.com/neovim/neovim
-RUN cd neovim && make CMAKE_BUILD_TYPE=Release && make install
+RUN cd neovim && git checkout stable && make CMAKE_BUILD_TYPE=Release && make install
 RUN rm -rf neovim
 RUN git clone https://github.com/Kaiguang/config.git
 RUN cd config && ./setupZsh.sh && ./setupGit.sh && ./setupNvim.sh
