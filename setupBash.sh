@@ -5,4 +5,4 @@ curl -o ~/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib
 nvm install node
 
 # Append to the existing ~/.bashrc
-echo ./HOME/.bashrc >> ~/.bashrc
+cat ./HOME/.bashrc >> ~/.bashrc
