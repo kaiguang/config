@@ -21,5 +21,6 @@ RUN git clone https://github.com/Kaiguang/config.git
 RUN cd config && ./setupBash.sh && ./setupGit.sh && ./setupNvim.sh
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+RUN nvm install node
 
 CMD bash
