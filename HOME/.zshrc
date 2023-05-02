@@ -14,6 +14,9 @@ zstyle ':vcs_info:git:*' actionformats '%F{yellow}(%r:%b|%a%u%c)%f'
 
 # Prompt
 export PS1='%F{cyan}%~%f${vcs_info_msg_0_}%# '
+# Draw a line between commands
+setopt promptsubst
+PS1=$'${(r:$COLUMNS::_:)}'$PS1
 
 # Aliases
 alias ll='ls -alFGh'
