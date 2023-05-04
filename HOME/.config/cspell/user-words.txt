@@ -17,6 +17,7 @@ dagu
 derryk
 devs
 diffview
+dinero
 endkey
 enjoi
 esbuild
@@ -30,6 +31,7 @@ keymaps
 kian
 likaiguang
 lpzov
+lualine
 luasnip
 mailout
 mailouts
@@ -43,8 +45,11 @@ openapi
 outfile
 postcss
 precmd
+realtypostings
+recurser
 redman
 ripgrep
+rmcloud
 ryanr
 sendgrid
 sentryclirc
