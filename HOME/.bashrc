@@ -18,3 +18,8 @@ PS1='$(draw_line)\n'$PS1
 # Aliases
 alias v='nvim'
 alias vi='nvim'
+
+# Function for grep
+function g() {
+  grep --color -R --exclude-dir={node_modules,.git} "$@"
+}

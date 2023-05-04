@@ -31,3 +31,9 @@ DISABLE_AUTO_TITLE="true"
 precmd() {
   echo -ne "\e]1;${PWD##*/}\a"
 }
+
+# Function for grep
+function g() {
+  grep --color -R --exclude-dir={node_modules,.git} "$@"
+}
+

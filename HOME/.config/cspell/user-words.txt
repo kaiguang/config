@@ -45,6 +45,7 @@ openapi
 outfile
 postcss
 precmd
+promptsubst
 realtypostings
 recurser
 redman
