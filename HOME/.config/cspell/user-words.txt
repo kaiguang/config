@@ -16,12 +16,17 @@ compinit
 dagu
 derryk
 devs
+diffview
 endkey
 enjoi
 esbuild
+foldexpr
+foldmethod
 gettext
 herndon
 kaiguang
+keymap
+keymaps
 kian
 likaiguang
 lpzov
@@ -52,6 +57,7 @@ startkey
 stylelint
 tanstack
 townhome
+treesitter
 unimportedrc
 unstagedstr
 waterbody

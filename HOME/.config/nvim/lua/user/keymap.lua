@@ -35,6 +35,10 @@ vim.keymap.set('',  '<Space>i',        vim.lsp.buf.implementation)
 vim.keymap.set('',  '<Space>o',        vim.diagnostic.open_float)
 vim.keymap.set('',  '<Space>m',        vim.lsp.buf.format)
 
+-- Diffview
+vim.keymap.set('',  '<Space>do',       ':DiffviewOpen<Enter>')
+vim.keymap.set('',  '<Space>dc',       ':DiffviewClose<Enter>')
+
 vim.keymap.set('',  '<Space>w',        ':w<Enter>')
 vim.keymap.set('',  '<Space>q',        ':q<Enter>')
 
