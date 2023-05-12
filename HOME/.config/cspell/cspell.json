@@ -1,13 +1,34 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
+  "dictionaries": [
+    "bash",
+    "companies",
+    "css",
+    "docker",
+    "fullstack",
+    "git",
+    "k8s",
+    "lorem-ipsum",
+    "lua",
+    "public-licenses",
+    "en-gb",
+    "en_us",
+    "filetypes",
+    "fonts",
+    "html",
+    "misc",
+    "node",
+    "npm",
+    "software-terms",
+    "typescript",
+    "user-words"
+  ],
   "dictionaryDefinitions": [
     {
       "name": "user-words",
-      "path": "./user-words.txt",
-      "addWords": true
+      "path": "./user-words.txt"
     }
   ],
-  "dictionaries": ["user-words"],
-  "ignorePaths": ["node_modules", "/user-words.txt"]
+  "ignorePaths": ["node_modules"]
 }
