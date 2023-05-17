@@ -56,7 +56,8 @@ return packer.startup(function(use)
   use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } }      -- Statusline
   use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }          -- Tabline
   use { "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }        -- Autopair
-  use "github/copilot.vim"
+  use "github/copilot.vim"                                                                           -- GitHub Copilot
+  use "sbdchd/neoformat"                                                                             -- Code formatter
 
   -- LSP
   use "neovim/nvim-lspconfig"             -- Configs for Neovim LSP
@@ -64,7 +65,7 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"           -- Neovim package manager for LSP servers, DAP servers, linters, and formatters
   use "williamboman/mason-lspconfig.nvim" -- Bridges mason and nvim-lspconfig
 
-  -- Syntax tree, support highlighting, incremental slection, indentation, folding, etc.
+  -- Syntax tree, support highlighting, incremental selection, indentation, folding, etc.
   use {
     "nvim-treesitter/nvim-treesitter",
     run = function()

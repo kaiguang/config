@@ -9,6 +9,7 @@ vim.keymap.set('',  '˚',               ':resize +2<Enter>')          -- <Opt-k>
 vim.keymap.set('',  '¬',               ':vertical resize +2<Enter>') -- <Opt-l>
 
 vim.keymap.set('',  '<Space>t',        ':NvimTreeToggle<Enter>')
+vim.keymap.set('',  '<Space>m',        ':Neoformat<Enter>')
 
 vim.keymap.set('',  '<Space>f',        ':Telescope find_files<Enter>')
 vim.keymap.set('',  '<Space>g',        ':Telescope git_files<Enter>')
@@ -33,7 +34,6 @@ vim.keymap.set('',  '<Space>e',        vim.lsp.buf.references)
 vim.keymap.set('',  '<Space><Enter>',  vim.lsp.buf.rename)
 vim.keymap.set('',  '<Space>i',        vim.lsp.buf.implementation)
 vim.keymap.set('',  '<Space>o',        vim.diagnostic.open_float)
-vim.keymap.set('',  '<Space>m',        vim.lsp.buf.format)
 
 -- Diffview
 vim.keymap.set('',  '<Space>do',       ':DiffviewOpen<Enter>')
