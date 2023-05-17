@@ -28,6 +28,7 @@ fortawesome
 gettext
 headlessui
 headshot
+iframes
 imagekit
 imagekitio
 immer
