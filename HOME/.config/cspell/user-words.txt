@@ -11,6 +11,7 @@ chargify
 checkwinsize
 codepaths
 compinit
+couchapp
 dagu
 derryk
 diffview
