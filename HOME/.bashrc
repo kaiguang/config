@@ -10,7 +10,7 @@ draw_line()
 {
   local COLUMNS="$COLUMNS"
   while ((COLUMNS-- > 0)); do
-    printf '\u2500'
+    printf '\u005f'
   done
 }
 PS1='$(draw_line)\n'$PS1
