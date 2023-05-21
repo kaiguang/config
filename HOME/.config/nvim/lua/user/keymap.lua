@@ -1,8 +1,10 @@
+-- Move cursor to other windows
 vim.keymap.set('',  '<C-h>',           '<C-w>h')
 vim.keymap.set('',  '<C-j>',           '<C-w>j')
 vim.keymap.set('',  '<C-k>',           '<C-w>k')
 vim.keymap.set('',  '<C-l>',           '<C-w>l')
 
+-- Resize windows
 vim.keymap.set('',  '˙',               ':vertical resize -2<Enter>') -- <Opt-h>
 vim.keymap.set('',  '∆',               ':resize -2<Enter>')          -- <Opt-j>
 vim.keymap.set('',  '˚',               ':resize +2<Enter>')          -- <Opt-k>
@@ -10,9 +12,9 @@ vim.keymap.set('',  '¬',               ':vertical resize +2<Enter>') -- <Opt-l>
 
 vim.keymap.set('',  '<Space>t',        ':NvimTreeToggle<Enter>')
 vim.keymap.set('',  '<Space>m',        ':Neoformat<Enter>')
+vim.keymap.set('',  '<Space>g',        ':GitBlameToggle<Enter>')
 
 vim.keymap.set('',  '<Space>f',        ':Telescope find_files<Enter>')
-vim.keymap.set('',  '<Space>g',        ':Telescope git_files<Enter>')
 vim.keymap.set('',  '<Space>/',        ':Telescope live_grep<Enter>')
 
 -- bufferline
@@ -36,8 +38,8 @@ vim.keymap.set('',  '<Space>i',        vim.lsp.buf.implementation)
 vim.keymap.set('',  '<Space>o',        vim.diagnostic.open_float)
 
 -- Diffview
-vim.keymap.set('',  '<Space>do',       ':DiffviewOpen<Enter>')
-vim.keymap.set('',  '<Space>dc',       ':DiffviewClose<Enter>')
+vim.keymap.set('',  '<Space>v',        ':DiffviewOpen<Enter>')
+vim.keymap.set('',  '<Space>b',        ':DiffviewClose<Enter>')
 
 vim.keymap.set('',  '<Space>w',        ':w<Enter>')
 vim.keymap.set('',  '<Space>q',        ':q<Enter>')
@@ -53,3 +55,6 @@ end)
 -- node_incremental = "<Right>",
 -- scope_incremental = "<Up>",
 -- node_decremental = "<Left>",
+
+-- Clear search highlight when pressing <Esc> in normal mode
+vim.keymap.set('n', '<Esc>', ':nohls<Enter>')
