@@ -18,8 +18,8 @@ vim.keymap.set('',  '<Space>f',        ':Telescope find_files<Enter>')
 vim.keymap.set('',  '<Space>/',        ':Telescope live_grep<Enter>')
 
 -- bufferline
-vim.keymap.set('',  '<C-,>',           ':BufferLineCyclePrev<Enter>')
-vim.keymap.set('',  '<C-.>',           ':BufferLineCycleNext<Enter>')
+vim.keymap.set('',  '<M-Left>',        ':BufferLineCyclePrev<Enter>')
+vim.keymap.set('',  '<M-Right>',       ':BufferLineCycleNext<Enter>')
 vim.keymap.set('',  '≤',               ':BufferLineMovePrev<Enter>') -- <Opt-,>
 vim.keymap.set('',  '≥',               ':BufferLineMoveNext<Enter>') -- <Opt-.>
 vim.keymap.set('',  '<Space>p',        ':BufferLinePick<Enter>')
