@@ -29,6 +29,7 @@ foldmethod
 fontawesome
 formik
 fortawesome
+gastown
 gettext
 headlessui
 headshot
@@ -36,6 +37,7 @@ iframes
 imagekit
 imagekitio
 immer
+jollibee
 kaiguang
 kanagawa
 keymap
@@ -71,6 +73,7 @@ papaparse
 parseable
 precmd
 promptsubst
+qrcode
 realtypostings
 recurser
 redman
@@ -89,6 +92,7 @@ solds
 sqft
 stagedstr
 startkey
+steveston
 tabularize
 tailwindcss
 tanstack
