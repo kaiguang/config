@@ -34,6 +34,6 @@ precmd() {
 
 # Function for grep
 function g() {
-  grep --color -R --exclude-dir={node_modules,.git} "$@"
+  grep --color -R --exclude-dir={node_modules,.git} --files-with-matches "$@"
 }
 
