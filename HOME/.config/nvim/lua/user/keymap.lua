@@ -58,3 +58,12 @@ end)
 
 -- Clear search highlight when pressing <Esc> in normal mode
 vim.keymap.set('n', '<Esc>', ':nohls<Enter>')
+
+-- leap.nvim
+-- Searching in all windows (including the current one) on the tab page.
+vim.keymap.set('n', 's', function()
+  require('leap').leap { target_windows = vim.tbl_filter(
+    function (win) return vim.api.nvim_win_get_config(win).focusable end,
+    vim.api.nvim_tabpage_list_wins(0)
+  )}
+end)

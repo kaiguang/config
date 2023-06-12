@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use { "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }        -- Autopair
   use "github/copilot.vim"                                                                           -- GitHub Copilot
   use "sbdchd/neoformat"                                                                             -- Code formatter
+  use "ggandor/leap.nvim"                                                                            -- Easy motion in the current buffer
 
   -- LSP
   use "neovim/nvim-lspconfig"             -- Configs for Neovim LSP
