@@ -4,12 +4,6 @@ vim.keymap.set('',  '<C-j>',           '<C-w>j')
 vim.keymap.set('',  '<C-k>',           '<C-w>k')
 vim.keymap.set('',  '<C-l>',           '<C-w>l')
 
--- Resize windows
-vim.keymap.set('',  '˙',               ':vertical resize -2<Enter>') -- <Opt-h>
-vim.keymap.set('',  '∆',               ':resize -2<Enter>')          -- <Opt-j>
-vim.keymap.set('',  '˚',               ':resize +2<Enter>')          -- <Opt-k>
-vim.keymap.set('',  '¬',               ':vertical resize +2<Enter>') -- <Opt-l>
-
 vim.keymap.set('',  '<Space>t',        ':NvimTreeToggle<Enter>')
 vim.keymap.set('',  '<Space>m',        ':Neoformat<Enter>')
 vim.keymap.set('',  '<Space>g',        ':GitBlameToggle<Enter>')
@@ -18,10 +12,10 @@ vim.keymap.set('',  '<Space>f',        ':Telescope find_files<Enter>')
 vim.keymap.set('',  '<Space>/',        ':Telescope live_grep<Enter>')
 
 -- bufferline
-vim.keymap.set('',  '<M-Left>',        ':BufferLineCyclePrev<Enter>')
-vim.keymap.set('',  '<M-Right>',       ':BufferLineCycleNext<Enter>')
-vim.keymap.set('',  '≤',               ':BufferLineMovePrev<Enter>') -- <Opt-,>
-vim.keymap.set('',  '≥',               ':BufferLineMoveNext<Enter>') -- <Opt-.>
+vim.keymap.set('',  '˙',               ':BufferLineCyclePrev<Enter>') -- <Opt-h>
+vim.keymap.set('',  '¬',               ':BufferLineCycleNext<Enter>') -- <Opt-l>
+vim.keymap.set('',  '≤',               ':BufferLineMovePrev<Enter>')  -- <Opt-,>
+vim.keymap.set('',  '≥',               ':BufferLineMoveNext<Enter>')  -- <Opt-.>
 vim.keymap.set('',  '<Space>p',        ':BufferLinePick<Enter>')
 vim.keymap.set('',  '<Space>c',        ':BufferLinePickClose<Enter>')
 vim.keymap.set('',  '<Space>l',        ':BufferLineCloseLeft<Enter>')
