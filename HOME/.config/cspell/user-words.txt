@@ -18,6 +18,7 @@ dagu
 derryk
 diffview
 dinero
+doorhanger
 endkey
 enjoi
 epcor
@@ -33,6 +34,7 @@ gastown
 gettext
 headlessui
 headshot
+hiit
 iframes
 imagekit
 imagekitio
@@ -60,6 +62,7 @@ naverc
 neoformat
 neovim
 nodenext
+nohls
 npmignore
 npmrc
 nums
@@ -93,6 +96,7 @@ sqft
 stagedstr
 startkey
 steveston
+tabpage
 tabularize
 tailwindcss
 tanstack
