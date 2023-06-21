@@ -1,5 +1,6 @@
 actionformats
 authorizenet
+bilibili
 bindkey
 blossor
 blueroof
@@ -18,6 +19,7 @@ dagu
 derryk
 diffview
 dinero
+dookbaeki
 doorhanger
 endkey
 enjoi
@@ -34,6 +36,7 @@ gastown
 gettext
 headlessui
 headshot
+heigo
 hiit
 iframes
 imagekit
@@ -54,11 +57,13 @@ luasnip
 mailout
 mailouts
 matomo
+maxio
 mlses
 multipage
 multipages
 mydesigns
 naverc
+neilzon
 neoformat
 neovim
 nodenext
@@ -101,10 +106,12 @@ tabularize
 tailwindcss
 tanstack
 telus
+terwillegar
 townhome
 treesitter
 unimportedrc
 unstagedstr
+viloria
 waterbody
 yopass
 zstyle
