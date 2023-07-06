@@ -23,6 +23,7 @@ alias ll='ls -alFGh'
 alias history='history 1'
 alias v='nvim'
 alias vi='nvim'
+alias c='code'
 
 bindkey -r "^L" # Remove key binding for clear screen
 
