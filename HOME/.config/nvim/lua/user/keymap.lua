@@ -10,6 +10,7 @@ vim.keymap.set('',  '<Space>g',        ':GitBlameToggle<Enter>')
 
 vim.keymap.set('',  '<Space>f',        ':Telescope find_files<Enter>')
 vim.keymap.set('',  '<Space>/',        ':Telescope live_grep<Enter>')
+vim.keymap.set('',  '<Space>e',        ':Telescope lsp_references<Enter>')
 
 -- bufferline
 vim.keymap.set('',  '˙',               ':BufferLineCyclePrev<Enter>') -- <Opt-h>
@@ -26,7 +27,6 @@ vim.keymap.set('',  '<Space>h',        vim.lsp.buf.hover)
 vim.keymap.set('',  '<Space>d',        vim.lsp.buf.definition)
 vim.keymap.set('',  '<Space>a',        vim.lsp.buf.code_action)
 vim.keymap.set('',  '<Space>n',        vim.lsp.buf.declaration)
-vim.keymap.set('',  '<Space>e',        vim.lsp.buf.references)
 vim.keymap.set('',  '<Space><Enter>',  vim.lsp.buf.rename)
 vim.keymap.set('',  '<Space>i',        vim.lsp.buf.implementation)
 vim.keymap.set('',  '<Space>o',        vim.diagnostic.open_float)
