@@ -1,4 +1,5 @@
 actionformats
+aritzia
 authorizenet
 bilibili
 bindkey
@@ -8,14 +9,17 @@ boomify
 brivity
 bufferline
 canmore
+certmanager
 chargify
 checkwinsize
 cheq
 cibc
+cineplex
 codepaths
 compinit
 couchapp
 dagu
+dast
 derryk
 diffview
 dinero
@@ -38,6 +42,7 @@ headlessui
 headshot
 heigo
 hiit
+hongmall
 iframes
 imagekit
 imagekitio
@@ -50,10 +55,12 @@ keymaps
 kian
 kwkly
 langchain
+letsencrypt
 likaiguang
 lpzov
 lualine
 luasnip
+lululemon
 mailout
 mailouts
 matomo
@@ -90,6 +97,7 @@ reduxjs
 ripgrep
 rmcloud
 ryanr
+sast
 sendgrid
 sentryclirc
 setopt
@@ -98,6 +106,7 @@ shortcode
 showdirtystate
 solds
 sqft
+ssense
 stagedstr
 startkey
 steveston
@@ -110,6 +119,7 @@ terwillegar
 townhome
 treesitter
 unimportedrc
+uniqlo
 unstagedstr
 viloria
 waterbody
