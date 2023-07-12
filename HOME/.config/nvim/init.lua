@@ -12,3 +12,7 @@ require "user.cmp"
 require "user.luasnip"
 require "user.nvim-tree"
 require "user.comment"
+
+require("indent_blankline").setup {
+    show_current_context = true,
+}
