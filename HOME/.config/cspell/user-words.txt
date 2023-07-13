@@ -1,6 +1,7 @@
 actionformats
 aritzia
 authorizenet
+autojump
 bilibili
 bindkey
 blankline
