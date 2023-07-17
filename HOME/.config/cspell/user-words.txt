@@ -123,6 +123,7 @@ treesitter
 unimportedrc
 uniqlo
 unstagedstr
+valorant
 viloria
 waterbody
 yopass
