@@ -2,7 +2,7 @@
   "title": "CapsLock to HyperKey",
   "rules": [
     {
-      "description": "Hold CapsLock for HyperKey, tap once for CapsLock.",
+      "description": "Hold CapsLock for HyperKey, tap once for Escape. Tap Escape for CapsLock.",
       "manipulators": [
         {
           "type": "basic",
@@ -19,6 +19,20 @@
             }
           ],
           "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
             {
               "key_code": "caps_lock"
             }
