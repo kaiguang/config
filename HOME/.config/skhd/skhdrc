@@ -1,0 +1,19 @@
+hyper - 0x1B  : yabai -m window --display recent   # hyper - -
+hyper - 0x18  : yabai -m window --grid 1:1:0:0:1:1 # hyper - =
+hyper - left  : yabai -m window --grid 1:2:0:0:1:1
+hyper - right : yabai -m window --grid 1:2:1:0:1:1
+hyper - up    : yabai -m window --grid 2:1:0:0:1:1
+hyper - down  : yabai -m window --grid 2:1:0:1:1:1
+hyper - 1     : yabai -m window --grid 2:2:0:0:1:1
+hyper - 2     : yabai -m window --grid 2:2:1:0:1:1
+hyper - 3     : yabai -m window --grid 2:2:0:1:1:1
+hyper - 4     : yabai -m window --grid 2:2:1:1:1:1
+
+hyper - h            : yabai -m window --resize left:-100:0
+hyper - j            : yabai -m window --resize bottom:0:100
+hyper - k            : yabai -m window --resize top:0:-100
+hyper - l            : yabai -m window --resize right:100:0
+cmd + alt + ctrl - h : yabai -m window --resize left:100:0
+cmd + alt + ctrl - j : yabai -m window --resize bottom:0:-100
+cmd + alt + ctrl - k : yabai -m window --resize top:0:100
+cmd + alt + ctrl - l : yabai -m window --resize right:-100:0
