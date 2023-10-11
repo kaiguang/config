@@ -53,7 +53,7 @@
       ]
     },
     {
-      "description": "Left option to control-w",
+      "description": "Left option to option-tab",
       "manipulators": [
         {
           "type": "basic",
@@ -71,8 +71,8 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "w",
-              "modifiers": "left_control"
+              "key_code": "tab",
+              "modifiers": "left_option"
             }
           ]
         }
