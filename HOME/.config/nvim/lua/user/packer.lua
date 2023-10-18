@@ -50,9 +50,7 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"                                                  -- Set commentstring based on cursor location in file
   use "numToStr/Comment.nvim"                                                                        -- Smart comment
   use "nvim-treesitter/nvim-treesitter-context"                                                      -- Show code context
-  use "lukas-reineke/indent-blankline.nvim"                                                          -- Indentation guides
   use "rebelot/kanagawa.nvim"                                                                        -- Colorscheme
-  use { "catppuccin/nvim", as = "catppuccin" }                                                       -- Colorscheme
   use "nvim-tree/nvim-tree.lua"                                                                      -- File explorer
   use { "nvim-telescope/telescope.nvim", tag = "0.1.1", requires = { { "nvim-lua/plenary.nvim" } } } -- Fuzzy finder
   use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } }      -- Statusline
