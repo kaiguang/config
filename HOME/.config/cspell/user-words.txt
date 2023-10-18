@@ -1,6 +1,7 @@
 actionformats
 aritzia
 authorizenet
+autocmd
 autojump
 bilibili
 bindkey
@@ -40,6 +41,7 @@ formik
 fortawesome
 gastown
 gettext
+guicursor
 headlessui
 headshot
 heigo
