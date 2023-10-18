@@ -16,3 +16,9 @@ require "user.comment"
 require("indent_blankline").setup {
     show_current_context = true,
 }
+
+-- Set cursor to vertical when leaving vim
+vim.api.nvim_create_autocmd({"VimLeave"}, {
+  pattern = {"*"},
+  command = "set guicursor=a:ver100",
+})
