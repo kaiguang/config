@@ -16,4 +16,4 @@
 [pull]
 	ff = only
 [core]
-	editor = code --wait
+	editor = nvim
