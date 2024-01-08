@@ -1,4 +1,6 @@
 {
   "keyMappings": "map F LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-f> LinkHints.activateModeToOpenInNewTab",
-  "settingsVersion": "2.0.5"
+  "linkHintCharacters": "abcdefghijklmnopqrstuvwxyz",
+  "settingsVersion": "2.0.5",
+  "exclusionRules": []
 }
