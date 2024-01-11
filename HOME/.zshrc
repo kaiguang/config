@@ -22,7 +22,7 @@ alias v='nvim'
 alias vi='nvim'
 alias c='code'
 
-bindkey -r "^L" # Remove key binding for clear screen
+# bindkey -r "^L" # Remove key binding for clear screen
 
 # Terminal tab title
 DISABLE_AUTO_TITLE="true"
