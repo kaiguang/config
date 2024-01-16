@@ -19,10 +19,7 @@ export PS1='%F{cyan}%~%f${vcs_info_msg_0_}%# '
 alias ll='ls -alFGh'
 alias history='history 1'
 alias v='nvim'
-alias vi='nvim'
 alias c='code'
-
-# bindkey -r "^L" # Remove key binding for clear screen
 
 # Terminal tab title
 DISABLE_AUTO_TITLE="true"

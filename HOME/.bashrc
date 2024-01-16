@@ -6,7 +6,6 @@ export PS1='\[\033[01;32m\]\w\[\033[00m\]\[\033[33m\]$(__git_ps1 " (%s)")\[\033[
 
 # Aliases
 alias v='nvim'
-alias vi='nvim'
 
 # Function for grep
 function g() {
