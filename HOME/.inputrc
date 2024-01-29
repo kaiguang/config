@@ -1,3 +1,0 @@
-# Put this file right beside .bashrc, for Bash only
-set editing-mode vi
-set show-mode-in-prompt on

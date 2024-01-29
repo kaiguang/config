@@ -30,16 +30,3 @@ function g() {
 function set-title() {
   echo -en "\e]0;$@\a"
 }
-
-# vi mode
-bindkey -v
-bindkey -v '^?' backward-delete-char # Fix the backspace not deleting
-zle-keymap-select() {
-  # Change cursor style based on insert or normal mode
-  case $KEYMAP in
-    (vicmd) echo -ne "\e[2 q";;      # Non-blinking bar
-    (viins|main) echo -ne "\e[5 q";; # Blinking vertical line
-  esac
-  zle reset-prompt
-}
-zle -N zle-keymap-select

@@ -14,6 +14,3 @@ alias v='nvim'
 function g() {
   grep --color -R --exclude-dir={node_modules,.git} --files-with-matches "$@"
 }
-
-# vi mode
-set -o vi
