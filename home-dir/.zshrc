@@ -20,6 +20,7 @@ alias ll='ls -alFGh'
 alias history='history 1'
 alias v='nvim'
 alias c='code'
+alias lg='lazygit'
 
 # Function for grep
 function g() {
