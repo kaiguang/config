@@ -2,6 +2,6 @@
 startup_mode = "Maximized"
 [font]
 normal = { family = "Hack Nerd Font", style = "Regular" }
-size = 14.0
+size = 12.0
 [cursor]
 style = { shape = "Beam", blinking = "On" }
