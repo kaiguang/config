@@ -1,12 +1,8 @@
 # My config files for apps
 
-## home-dir
+## ~
 
 The `~` home directory.
-
-### dot-config
-
-The `~/.config/` directory.
 
 ## BetterTouchTool
 
