@@ -7,7 +7,7 @@ import = [
 [window]
 startup_mode = "Maximized"
 [font]
-normal = { family = "Iosevka Kai", style = "Regular" }
+normal = { family = "Iosevka", style = "Regular" }
 size = 14.0
 [cursor]
 style = { shape = "Beam", blinking = "On" }
