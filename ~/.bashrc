@@ -5,7 +5,13 @@
 . ~/git-completion.bash
 . ~/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1='\[\033[01;32m\]\w\[\033[00m\]\[\033[33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+# Replace the PS1 assignments around line 60 and 62
+# This basically appends \[\033[33m\]$(__git_ps1 "(%s)")\[\033[00m\] to the tailing \$
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[33m\]$(__git_ps1 "(%s)")\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\[\033[33m\]$(__git_ps1 "(%s)")\[\033[00m\]\$ '
+fi
 
 # Aliases
 alias v='nvim'
