@@ -1,6 +1,39 @@
 {
   "keyMappings": "map F LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-f> LinkHints.activateModeToOpenInNewTab",
   "linkHintCharacters": "abcdefghijklmnopqrstuvwxyz",
-  "settingsVersion": "2.0.5",
-  "exclusionRules": []
+  "settingsVersion": "2.1.1",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://devicetests.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://docs.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://monkeytype.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://10.3.0.0:8006/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://usevia.app/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://puter.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://www.figma.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://app.diagrams.net/*"
+    }
+  ]
 }
