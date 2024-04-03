@@ -1,8 +1,6 @@
 # Theme
 # https://github.com/alacritty/alacritty-theme
-import = [
-  "~/.config/alacritty/themes/themes/kanagawa_wave.toml"
-]
+import = ["~/.config/alacritty/themes/themes/gruvbox_light.toml"]
 
 [window]
 startup_mode = "Maximized"
