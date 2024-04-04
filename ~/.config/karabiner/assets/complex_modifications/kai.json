@@ -25,6 +25,29 @@
       ]
     },
     {
+      "description": "F24 to hyper key and space",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f24"
+          },
+          "to": [
+            {
+              "key_code": "right_shift",
+              "modifiers": ["right_command", "right_control", "right_option"],
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Shift to caps lock",
       "manipulators": [
         {
