@@ -1,6 +1,6 @@
 # My config files for apps
 
-## ~
+## HOME
 
 The `~` home directory.
 
