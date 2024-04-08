@@ -1,6 +1,7 @@
 # Theme
 # https://github.com/alacritty/alacritty-theme
-import = ["~/.config/alacritty/themes/themes/gruvbox_light.toml"]
+# import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/solarized_light.toml"]
 
 [window]
 startup_mode = "Maximized"
