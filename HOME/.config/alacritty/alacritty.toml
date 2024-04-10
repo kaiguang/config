@@ -5,6 +5,7 @@ import = ["~/.config/alacritty/themes/themes/solarized_light.toml"]
 
 [window]
 startup_mode = "Maximized"
+padding = { x = 4, y = 0 }
 [font]
 normal = { family = "Iosevka", style = "Regular" }
 size = 14.0
