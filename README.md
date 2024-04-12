@@ -6,7 +6,7 @@ The `~` home directory.
 
 ## BetterTouchTool
 
-Exported using the BetterTouchTool UI, only triggers, no settings.
+Exported using the BetterTouchTool UI, triggers and settings.
 
 Can be imported from the same BetterTouchTool UI.
 
