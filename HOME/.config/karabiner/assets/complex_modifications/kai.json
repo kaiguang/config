@@ -25,23 +25,29 @@
       ]
     },
     {
-      "description": "F24 to hyper key and space",
+      "description": "Mouse buttons to switch tabs",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f24"
+            "pointing_button": "button4"
           },
           "to": [
             {
-              "key_code": "right_shift",
-              "modifiers": ["right_command", "right_control", "right_option"],
-              "lazy": true
+              "key_code": "right_arrow",
+              "modifiers": ["right_command", "right_option"]
             }
-          ],
-          "to_if_alone": [
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "to": [
             {
-              "key_code": "spacebar"
+              "key_code": "left_arrow",
+              "modifiers": ["right_command", "right_option"]
             }
           ]
         }
