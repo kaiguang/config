@@ -1,7 +1,9 @@
 # Theme
 # https://github.com/alacritty/alacritty-theme
-# import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
-import = ["~/.config/alacritty/themes/themes/solarized_light.toml"]
+# Dark theme
+import = ["~/.config/alacritty/themes/themes/tokyo-night.toml"]
+# Light theme
+# import = ["~/.config/alacritty/themes/themes/alabaster.toml"]
 
 [window]
 startup_mode = "Maximized"
