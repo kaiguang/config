@@ -25,12 +25,30 @@
       ]
     },
     {
-      "description": "Mouse buttons to switch tabs",
+      "description": "Mouse button command combos",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button4"
+            "pointing_button": "button3",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": ["right_command"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
           },
           "to": [
             {
@@ -42,7 +60,10 @@
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button5"
+            "pointing_button": "button5",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
           },
           "to": [
             {
