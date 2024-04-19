@@ -133,7 +133,7 @@
       ]
     },
     {
-      "description": "Disable MacOS system diagnostic shortcuts",
+      "description": "Change macOS system diagnostic shortcuts to -=",
       "manipulators": [
         {
           "type": "basic",
@@ -145,7 +145,7 @@
           },
           "to": [
             {
-              "key_code": "vk_none"
+              "key_code": "hyphen"
             }
           ]
         },
@@ -159,7 +159,42 @@
           },
           "to": [
             {
-              "key_code": "vk_none"
+              "key_code": "equal_sign"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper kj to _+",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": ["command", "control", "option", "shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": ["right_shift"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": ["command", "control", "option", "shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+              "modifiers": ["right_shift"]
             }
           ]
         }
