@@ -108,7 +108,7 @@
       ]
     },
     {
-      "description": "Left command to escape",
+      "description": "Left command to Homerow",
       "manipulators": [
         {
           "type": "basic",
@@ -126,7 +126,13 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "escape"
+              "key_code": "h",
+              "modifiers": [
+                "right_command",
+                "right_control",
+                "right_option",
+                "right_shift"
+              ]
             }
           ]
         }
@@ -166,7 +172,7 @@
       ]
     },
     {
-      "description": "Hyper kj to _+",
+      "description": "Hyper kl to _+",
       "manipulators": [
         {
           "type": "basic",
