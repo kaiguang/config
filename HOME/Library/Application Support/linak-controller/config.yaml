@@ -1,0 +1,9 @@
+mac_address: 1EF8AA6E-A200-FF33-CA20-14498026A701
+scan_timeout: 5
+connection_timeout: 10
+adapter_name: hci0
+server_address: "127.0.0.1"
+server_port: 9123
+favourites:
+  sit: 80
+  stand: 500
