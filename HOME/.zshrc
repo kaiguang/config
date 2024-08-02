@@ -15,12 +15,14 @@ zstyle ':vcs_info:git:*' actionformats '%F{yellow}(%r:%b|%a%u%c)%f'
 # Prompt
 export PS1='%F{cyan}%~%f${vcs_info_msg_0_}%# '
 
+# Use beam shape cursor on startup
+echo -ne '\e[5 q'
+
 # Aliases
 alias ll='ls -alFGh'
 alias history='history 1'
 alias v='nvim'
 alias c='code'
-alias lg='lazygit'
 
 # Function for grep
 function g() {
