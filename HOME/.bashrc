@@ -14,8 +14,7 @@ else
 fi
 
 # Aliases
-alias v='nvim'
-alias lg='lazygit'
+alias n='nvim'
 
 # Function for grep
 function g() {
