@@ -11,5 +11,3 @@ padding = { x = 4, y = 0 }
 [font]
 normal = { family = "Iosevka Term", style = "Light" }
 size = 14.0
-[cursor]
-style = { shape = "Beam", blinking = "On" }
