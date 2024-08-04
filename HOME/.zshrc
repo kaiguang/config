@@ -21,7 +21,7 @@ echo -ne '\e[5 q'
 # Aliases
 alias ll='ls -alFGh'
 alias history='history 1'
-alias v='nvim'
+alias n='nvim'
 alias c='code'
 
 # Function for grep
