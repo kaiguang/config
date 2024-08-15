@@ -30,3 +30,13 @@ function g() {
 function set-title() {
   echo -en "\e]0;$@\a"
 }
+
+# Clear screen and scrollback
+ctrl_l() {
+    builtin print -rn -- $'\r\e[0J\e[H\e[3J' >"$TTY"
+    builtin zle .reset-prompt
+    builtin zle -R
+}
+zle -N ctrl_l
+bindkey '^l' ctrl_l
+
