@@ -10,4 +10,7 @@ startup_mode = "Maximized"
 padding = { x = 4, y = 0 }
 [font]
 normal = { family = "Iosevka Term", style = "Light" }
+bold = { family = "Iosevka Term", style = "Bold" }
+italic = { family = "Iosevka Term", style = "Light Italic" }
+bold_italic = { family = "Iosevka Term", style = "Bold Italic" }
 size = 14.0
