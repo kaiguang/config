@@ -1,13 +1,12 @@
 # Theme
 # https://github.com/alacritty/alacritty-theme
 # Dark theme
-import = ["~/.config/alacritty/themes/themes/tokyo-night.toml"]
+# import = ["~/.config/alacritty/themes/themes/tokyo-night.toml"]
 # Light theme
-# import = ["~/.config/alacritty/themes/themes/alabaster.toml"]
+import = ["~/.config/alacritty/themes/themes/alabaster.toml"]
 
 [window]
-startup_mode = "Maximized"
-padding = { x = 4, y = 0 }
+padding = { x = 4, y = 2 }
 [font]
 normal = { family = "Iosevka Term", style = "Light" }
 bold = { family = "Iosevka Term", style = "Bold" }
