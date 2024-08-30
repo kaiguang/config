@@ -12,7 +12,11 @@
           "to": [
             {
               "key_code": "right_shift",
-              "modifiers": ["right_command", "right_control", "right_option"],
+              "modifiers": [
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
               "lazy": true
             }
           ],
@@ -32,7 +36,12 @@
           "from": {
             "key_code": "comma",
             "modifiers": {
-              "mandatory": ["command", "control", "option", "shift"]
+              "mandatory": [
+                "command",
+                "control",
+                "option",
+                "shift"
+              ]
             }
           },
           "to": [
@@ -46,7 +55,12 @@
           "from": {
             "key_code": "period",
             "modifiers": {
-              "mandatory": ["command", "control", "option", "shift"]
+              "mandatory": [
+                "command",
+                "control",
+                "option",
+                "shift"
+              ]
             }
           },
           "to": [
@@ -65,7 +79,12 @@
           "from": {
             "key_code": "h",
             "modifiers": {
-              "mandatory": ["command", "control", "option", "shift"]
+              "mandatory": [
+                "command",
+                "control",
+                "option",
+                "shift"
+              ]
             }
           },
           "to": [
@@ -79,7 +98,12 @@
           "from": {
             "key_code": "j",
             "modifiers": {
-              "mandatory": ["command", "control", "option", "shift"]
+              "mandatory": [
+                "command",
+                "control",
+                "option",
+                "shift"
+              ]
             }
           },
           "to": [
@@ -93,7 +117,12 @@
           "from": {
             "key_code": "k",
             "modifiers": {
-              "mandatory": ["command", "control", "option", "shift"]
+              "mandatory": [
+                "command",
+                "control",
+                "option",
+                "shift"
+              ]
             }
           },
           "to": [
@@ -107,12 +136,135 @@
           "from": {
             "key_code": "l",
             "modifiers": {
-              "mandatory": ["command", "control", "option", "shift"]
+              "mandatory": [
+                "command",
+                "control",
+                "option",
+                "shift"
+              ]
             }
           },
           "to": [
             {
               "key_code": "right_arrow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "After command+tab, use h/l to choose applications",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "during mission control",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "during mission control",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "during mission control",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "during mission control",
+                "value": 1,
+                "key_up_value": 0
+              }
+            },
+            {
+              "key_code": "left_command"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "during mission control",
+                "value": 1,
+                "key_up_value": 0
+              }
+            },
+            {
+              "key_code": "right_command"
             }
           ]
         }
