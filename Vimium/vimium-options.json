@@ -24,31 +24,11 @@
     },
     {
       "passKeys": "",
-      "pattern": "https?://puter.com/*"
-    },
-    {
-      "passKeys": "",
       "pattern": "https?://www.figma.com/*"
     },
     {
       "passKeys": "",
-      "pattern": "https?://app.diagrams.net/*"
-    },
-    {
-      "passKeys": "",
       "pattern": "https?://tetr.io/*"
-    },
-    {
-      "passKeys": "",
-      "pattern": "https?://excalidraw.com/*"
-    },
-    {
-      "passKeys": "",
-      "pattern": "https?://www.pixilart.com/*"
-    },
-    {
-      "passKeys": "",
-      "pattern": "https?://github.com/*"
     }
   ]
 }
