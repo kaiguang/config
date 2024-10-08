@@ -7,9 +7,16 @@ import = ["~/.config/alacritty/themes/themes/alabaster.toml"]
 
 [window]
 padding = { x = 4, y = 2 }
+
 [font]
 normal = { family = "Iosevka Term", style = "Light" }
 bold = { family = "Iosevka Term", style = "Bold" }
 italic = { family = "Iosevka Term", style = "Light Italic" }
 bold_italic = { family = "Iosevka Term", style = "Bold Italic" }
 size = 14.0
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
