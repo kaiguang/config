@@ -29,6 +29,14 @@
     {
       "passKeys": "",
       "pattern": "https?://tetr.io/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://linear.app/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://www.notion.so/*"
     }
   ]
 }
