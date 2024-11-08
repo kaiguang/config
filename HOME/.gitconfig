@@ -1,6 +1,7 @@
 [user]
 	name = Kaiguang Li
 	email = 33639861+Kaiguang@users.noreply.github.com
+	signingkey = /Users/kai/.ssh/id_rsa.pub
 [alias]
 	b = branch
 	ba = branch --all
@@ -16,4 +17,8 @@
 [pull]
 	ff = only
 [core]
-	editor = nvim
+	editor = code --wait
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
