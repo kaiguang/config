@@ -17,6 +17,7 @@ size = 14.0
 
 [keyboard]
 bindings = [
+  # Move cursor left and right by word
   { key = "Right", mods = "Alt", chars = "\u001BF" },
   { key = "Left",  mods = "Alt", chars = "\u001BB" },
 ]

@@ -31,7 +31,8 @@ function set-title() {
   echo -en "\e]0;$@\a"
 }
 
-# Clear screen and scrollback
+# Clear screen and scrollback, works in terminal emulator, but not in tmux.
+# In tmux, use additional C-k to clear the scrollback buffer. Ref: tmux.conf file.
 ctrl_l() {
     builtin print -rn -- $'\r\e[0J\e[H\e[3J' >"$TTY"
     builtin zle .reset-prompt

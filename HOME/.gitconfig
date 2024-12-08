@@ -14,10 +14,9 @@
 	s = status --untracked-files
 	su = submodule update --remote --merge
 	sp = submodule foreach 'git ch master && git p'
+	ps = push --set-upstream origin HEAD
 [pull]
 	ff = only
-[core]
-	editor = code --wait
 [gpg]
 	format = ssh
 [commit]
