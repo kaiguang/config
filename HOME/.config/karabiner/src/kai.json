@@ -52,20 +52,20 @@
         },
 
         // ()
-        { "type": "basic", "from": { "key_code": "q", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "9", "modifiers": ["left_shift"] }] },
-        { "type": "basic", "from": { "key_code": "w", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "0", "modifiers": ["left_shift"] }] },
+        { "type": "basic", "from": { "key_code": "e", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "9", "modifiers": ["left_shift"] }] },
+        { "type": "basic", "from": { "key_code": "r", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "0", "modifiers": ["left_shift"] }] },
         // []
-        { "type": "basic", "from": { "key_code": "a", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "open_bracket" }] },
-        { "type": "basic", "from": { "key_code": "s", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "close_bracket" }] },
+        { "type": "basic", "from": { "key_code": "d", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "open_bracket" }] },
+        { "type": "basic", "from": { "key_code": "f", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "close_bracket" }] },
         // {}
-        { "type": "basic", "from": { "key_code": "z", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "open_bracket", "modifiers": ["left_shift"] }] },
-        { "type": "basic", "from": { "key_code": "x", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "close_bracket", "modifiers": ["left_shift"] }] },
-        // -=
-        { "type": "basic", "from": { "key_code": "d", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "hyphen" }] },
-        { "type": "basic", "from": { "key_code": "f", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "equal_sign" }] },
+        { "type": "basic", "from": { "key_code": "c", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "open_bracket", "modifiers": ["left_shift"] }] },
+        { "type": "basic", "from": { "key_code": "v", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "close_bracket", "modifiers": ["left_shift"] }] },
         // _+
-        { "type": "basic", "from": { "key_code": "e", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "hyphen", "modifiers": ["left_shift"] }] },
-        { "type": "basic", "from": { "key_code": "r", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "equal_sign", "modifiers": ["left_shift"] }] },
+        { "type": "basic", "from": { "key_code": "q", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "hyphen", "modifiers": ["left_shift"] }] },
+        { "type": "basic", "from": { "key_code": "w", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "equal_sign", "modifiers": ["left_shift"] }] },
+        // -=
+        { "type": "basic", "from": { "key_code": "a", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "hyphen" }] },
+        { "type": "basic", "from": { "key_code": "s", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "key_code": "equal_sign" }] },
 
         // VSCode, Cursor: copy relative path of active file
         {
