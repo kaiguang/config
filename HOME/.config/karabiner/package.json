@@ -1,0 +1,13 @@
+{
+  "name": "karabiner-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node index.js",
+    "dev": "node --watch-path=./src ./src/index.js"
+  },
+  "dependencies": {
+    "comment-json": "^4.2.5"
+  }
+}
