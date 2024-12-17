@@ -84,7 +84,8 @@
       "manipulators": [
         // cmd + shift + []
         { "type": "basic", "from": { "key_code": "left_arrow", "modifiers": { "mandatory": ["right_option"] } }, "to": { "key_code": "open_bracket", "modifiers": ["left_shift", "left_command"] } },
-        { "type": "basic", "from": { "key_code": "right_arrow", "modifiers": { "mandatory": ["right_option"] } }, "to": { "key_code": "close_bracket", "modifiers": ["left_shift", "left_command"] } }
+        { "type": "basic", "from": { "key_code": "right_arrow", "modifiers": { "mandatory": ["right_option"] } }, "to": { "key_code": "close_bracket", "modifiers": ["left_shift", "left_command"] } },
+        { "type": "basic", "from": { "key_code": "q", "modifiers": { "mandatory": ["right_option"] } }, "to": { "key_code": "q", "modifiers": ["left_control", "left_command"] } }
       ]
     }
   ]
