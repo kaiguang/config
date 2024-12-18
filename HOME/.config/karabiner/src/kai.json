@@ -74,7 +74,7 @@
         // VSCode, Cursor: copy relative path of active file
         {
           "type": "basic",
-          "from": { "key_code": "c", "modifiers": { "mandatory": ["right_command"] } },
+          "from": { "key_code": "p", "modifiers": { "mandatory": ["right_command"] } },
           "to": [
             { "key_code": "r", "modifiers": ["left_command"] },
             { "key_code": "c", "modifiers": ["left_command", "left_option", "left_shift"] }
