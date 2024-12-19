@@ -24,7 +24,10 @@
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "files.associations": { "*.css": "tailwindcss" },
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.json": "jsonc"
+  },
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
@@ -44,28 +47,34 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vim.highlightedyank.enable": true,
+  "vim.easymotion": true,
+  "vim.foldfix": true,
   "vim.highlightedyank.color": "#FFFF00",
-  "vim.highlightedyank.duration": 100,
+  "vim.highlightedyank.duration": 300,
+  "vim.highlightedyank.enable": true,
   "vim.leader": "<Space>",
+  "vim.showMarksInGutter": true,
   "vim.useSystemClipboard": true,
   "vim.handleKeys": {
     "<C-r>": false,
     "<C-w>": false
   },
   "vim.normalModeKeyBindingsNonRecursive": [
-    // Move cursor with word wrap
-    { "before": ["j"], "after": ["g", "j"] },
-    { "before": ["k"], "after": ["g", "k"] },
-    { "before": ["<C-j>"], "after": ["6", "g", "j"] },
-    { "before": ["<C-k>"], "after": ["6", "g", "k"] },
-    // Editor split
-    { "before": ["leader", "%"], "commands": [":vsplit"] },
-    { "before": ["leader", "\""], "commands": [":split"] },
-    // Go to references
+    { "before": ["<C-j>"], "after": ["6", "j"] },
+    { "before": ["<C-k>"], "after": ["6", "k"] },
+    { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
+    { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+    { "before": ["leader", "%"], "commands": ["workbench.action.splitEditor"] },
+    {
+      "before": ["leader", "\""],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
     { "before": ["g", "f"], "commands": ["editor.action.goToReferences"] },
-    // Rename
-    { "before": ["g", "r"], "commands": ["editor.action.rename"] }
+    { "before": ["g", "r"], "commands": ["editor.action.rename"] },
+    // EasyMotion
+    { "before": ["leader", "s"], "after": ["leader", "leader", "s"] },
+    { "before": ["leader", "w"], "after": ["leader", "leader", "w"] },
+    { "before": ["leader", "b"], "after": ["leader", "leader", "b"] }
   ],
   "vim.insertModeKeyBindings": [],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -212,6 +221,7 @@
     "fieldname",
     "flexbugs",
     "foldexpr",
+    "foldfix",
     "foldmethod",
     "fontawesome",
     "formik",
@@ -458,9 +468,11 @@
     "undofile",
     "unimportedrc",
     "uniqlo",
+    "unmarshall",
     "unnamedplus",
     "unstagedstr",
     "unswt",
+    "uuidv4",
     "uuser",
     "valemount",
     "valorant",

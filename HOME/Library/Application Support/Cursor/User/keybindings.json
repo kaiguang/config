@@ -19,5 +19,13 @@
     "key": "cmd+k cmd+]",
     "command": "-editor.unfoldRecursively",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "cmd+,",
+    "command": "-workbench.action.openSettings"
   }
 ]
