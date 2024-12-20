@@ -39,10 +39,6 @@
     {
       "passKeys": "",
       "pattern": "https?://www.notion.so/*"
-    },
-    {
-      "passKeys": "",
-      "pattern": "https?://github.com/*"
     }
   ]
 }

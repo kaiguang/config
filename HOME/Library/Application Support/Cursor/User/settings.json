@@ -53,22 +53,25 @@
   "vim.highlightedyank.duration": 300,
   "vim.highlightedyank.enable": true,
   "vim.leader": "<Space>",
-  "vim.showMarksInGutter": true,
   "vim.useSystemClipboard": true,
   "vim.handleKeys": {
     "<C-r>": false,
     "<C-w>": false
   },
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Faster up and down
     { "before": ["<C-j>"], "after": ["6", "j"] },
     { "before": ["<C-k>"], "after": ["6", "k"] },
+    // Switch tabs
     { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
     { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+    // Split editors
     { "before": ["leader", "%"], "commands": ["workbench.action.splitEditor"] },
     {
       "before": ["leader", "\""],
       "commands": ["workbench.action.splitEditorDown"]
     },
+    // Code actions
     { "before": ["g", "f"], "commands": ["editor.action.goToReferences"] },
     { "before": ["g", "r"], "commands": ["editor.action.rename"] },
     // EasyMotion

@@ -27,5 +27,20 @@
   {
     "key": "cmd+,",
     "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "bookmarks.toggleLabeled",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+i",
+    "command": "bookmarks.listFromAllFiles",
+    "when": "editorTextFocus"
   }
 ]
