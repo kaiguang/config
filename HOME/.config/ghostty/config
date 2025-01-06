@@ -1,9 +1,9 @@
-theme = OneHalfLight
+theme = "GruvboxLight"
+
+title = "Ghostty"
 
 font-family = "Iosevka Term"
 font-size = 14
-
-title = "Ghostty"
 
 # Disable ligatures
 font-feature = -calt
