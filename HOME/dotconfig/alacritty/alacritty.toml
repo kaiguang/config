@@ -4,7 +4,7 @@
 # ! Keep the below line 7 and 8 position unchanged, the value can be changed.
 # Shell script `alatog` relies on the line number to swap them.
 import = [
-  "~/.config/alacritty/themes/themes/gruvbox_light.toml",
+  "~/.config/alacritty/themes/themes/catppuccin_latte.toml",
   "~/.config/alacritty/themes/themes/catppuccin_mocha.toml",
 ]
 
