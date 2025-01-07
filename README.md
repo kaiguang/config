@@ -1,8 +1,16 @@
-# My config files for apps
+# My config files
 
 ## HOME
 
 The `~` home directory.
+
+### HOME/dotconfig
+
+The `~/.config` directory, dot prefix is replaced with word 'dot' to prevent macOS hiding dot files by default.
+
+Similar replacement for dotzshrc, dotgitconfig, etc.
+
+When using the config files, swap back the dot prefix.
 
 ## BetterTouchTool
 

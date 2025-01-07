@@ -19,14 +19,14 @@ RUN git clone git@github.com:kaiguang/notebook.git
 
 # git config
 WORKDIR /root
-COPY ./HOME/.gitconfig .
+COPY ./HOME/dotgitconfig ./.gitconfig
 RUN sed -i 's$signingkey = /Users/kai/.ssh/id_rsa.pub$signingkey = /root/.ssh/id_rsa.pub$' ./.gitconfig
 
 # .bashrc
 WORKDIR /tmp
 RUN curl -o ~/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 RUN curl -o ~/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-COPY ./HOME/.bashrc .
+COPY ./HOME/dotbashrc ./.bashrc
 RUN cat .bashrc >> ~/.bashrc && rm .bashrc
 
 # autojump
