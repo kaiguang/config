@@ -26,9 +26,14 @@ function g() {
   grep --color -R --exclude-dir={node_modules,.git} --files-with-matches "$@"
 }
 
-# Set the tab title for Alacritty
+# Set the tab title for Alacritty, doesn't work in tmux
 function set-title() {
   echo -en "\e]0;$@\a"
+}
+
+# Toggle Alacritty light/dark themes with in-place editing
+function alatog() {
+  sed -e "7h; 7d; 8G;" -i.bak ~/.config/alacritty/alacritty.toml
 }
 
 # Clear screen and scrollback, works in terminal emulator, but not in tmux.
