@@ -2,16 +2,17 @@
   "[elm]": { "editor.defaultFormatter": "elmTooling.elm-ls-vscode" },
   "cursor.cpp.disabledLanguages": ["markdown"],
   "cursor.cpp.enablePartialAccepts": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.renderSideBySide": true,
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.find.cursorMoveOnType": false,
-  "editor.find.loop": false,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontFamily": "Iosevka, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.indentSize": 2,
   "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 16,
@@ -48,7 +49,6 @@
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.easymotion": true,
-  "vim.foldfix": true,
   "vim.highlightedyank.color": "#FFFF00",
   "vim.highlightedyank.duration": 300,
   "vim.highlightedyank.enable": true,
@@ -59,12 +59,12 @@
     "<C-w>": false
   },
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Move cursor with word wrap and region fold
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
     // Faster up and down
-    { "before": ["<C-j>"], "after": ["6", "j"] },
-    { "before": ["<C-k>"], "after": ["6", "k"] },
-    // Switch tabs
-    { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
-    { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+    { "before": ["<C-j>"], "after": ["6", "g", "j"] },
+    { "before": ["<C-k>"], "after": ["6", "g", "k"] },
     // Split editors
     { "before": ["leader", "%"], "commands": ["workbench.action.splitEditor"] },
     {
@@ -81,7 +81,7 @@
   ],
   "vim.insertModeKeyBindings": [],
   "vim.visualModeKeyBindingsNonRecursive": [
-    // Move cursor with word wrap
+    // Move cursor with word wrap and region fold
     { "before": ["j"], "after": ["g", "j"] },
     { "before": ["k"], "after": ["g", "k"] },
     // No newline at the end
@@ -90,6 +90,8 @@
     { "before": ["p"], "after": ["p", "g", "v", "y"] }
   ],
   "window.autoDetectColorScheme": true,
+  "window.density.editorTabHeight": "compact",
+  "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": { "git-rebase-todo": "default" },
   "workbench.preferredDarkColorTheme": "Default Dark Modern",
   "workbench.preferredLightColorTheme": "Default Light Modern",
@@ -137,6 +139,7 @@
     "autocmd",
     "avenir",
     "awsxray",
+    "baekjeong",
     "balatro",
     "ballotpedia",
     "bilibili",
@@ -187,6 +190,7 @@
     "conslog",
     "convo",
     "coprogram",
+    "corne",
     "couchapp",
     "createdb",
     "ctrip",
@@ -270,6 +274,7 @@
     "jajangmyeon",
     "janzen",
     "japonais",
+    "jellycat",
     "jjamppong",
     "joao",
     "jollibee",
@@ -340,6 +345,7 @@
     "nohls",
     "noodleholic",
     "nopasswd",
+    "northwinds",
     "npmignore",
     "npmrc",
     "numhl",
@@ -429,6 +435,7 @@
     "softtabstop",
     "solds",
     "sometype",
+    "sortkey",
     "spacebar",
     "splitbelow",
     "splitright",
@@ -480,6 +487,7 @@
     "valemount",
     "valorant",
     "valrhona",
+    "vanta",
     "viloria",
     "vimdoc",
     "vimium",
