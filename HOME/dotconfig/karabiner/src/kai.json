@@ -14,7 +14,7 @@
       ]
     },
     {
-      "description": "Disable macOS system diagnostic shortcuts to -=",
+      "description": "Disable macOS system diagnostic shortcuts",
       "manipulators": [
         { "type": "basic", "from": { "key_code": "comma", "modifiers": { "mandatory": ["command", "control", "option", "shift"] } }, "to": [{ "key_code": "vk_none" }] },
         { "type": "basic", "from": { "key_code": "period", "modifiers": { "mandatory": ["command", "control", "option", "shift"] } }, "to": [{ "key_code": "vk_none" }] }
