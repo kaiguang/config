@@ -62,15 +62,15 @@
     // Move cursor with word wrap and region fold
     { "before": ["j"], "after": ["g", "j"] },
     { "before": ["k"], "after": ["g", "k"] },
-    // Faster up and down
-    { "before": ["<C-j>"], "after": ["6", "g", "j"] },
-    { "before": ["<C-k>"], "after": ["6", "g", "k"] },
     // Split editors
     { "before": ["leader", "%"], "commands": ["workbench.action.splitEditor"] },
     {
       "before": ["leader", "\""],
       "commands": ["workbench.action.splitEditorDown"]
     },
+    // Fold
+    { "before": ["leader", "z"], "commands": ["editor.foldAll"] },
+    { "before": ["leader", "Z"], "commands": ["editor.unfoldAll"] },
     // Code actions
     { "before": ["g", "f"], "commands": ["editor.action.goToReferences"] },
     { "before": ["g", "r"], "commands": ["editor.action.rename"] },
@@ -97,10 +97,6 @@
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 24,
-  "codeium.enableConfig": {
-    "*": true,
-    "plaintext": true
-  },
   "cSpell.dictionaries": [
     "bash",
     "companies",
@@ -320,6 +316,7 @@
     "liuyishou",
     "livekit",
     "lkaiguang",
+    "logstream",
     "lpzov",
     "lualine",
     "luasnip",
