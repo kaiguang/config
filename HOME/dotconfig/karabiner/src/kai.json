@@ -51,7 +51,7 @@
           "type": "basic",
           "from": { "key_code": "p", "modifiers": { "mandatory": ["right_command"] } },
           "to": [
-            { "key_code": "r", "modifiers": ["left_command"] },
+            { "key_code": "k", "modifiers": ["left_command"] },
             { "key_code": "c", "modifiers": ["left_command", "left_option", "left_shift"] }
           ],
           "conditions": [{ "type": "frontmost_application_if", "bundle_identifiers": ["com.microsoft.VSCode", "com.todesktop.230313mzl4w4u92"] }]
