@@ -1,6 +1,6 @@
 {
   "keyMappings": "map F LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-f> LinkHints.activateModeToOpenInNewTab\n\nmap J scrollPageDown\nmap K scrollPageUp\nmap H previousTab\nmap L nextTab",
-  "linkHintCharacters": "fjdkslaghtybnruvmeicwxqp",
+  "linkHintCharacters": "fjdkslaghtybnruvmecwxqp",
   "grabBackFocus": true,
   "settingsVersion": "2.3.1",
   "exclusionRules": [
