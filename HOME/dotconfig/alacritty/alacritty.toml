@@ -11,13 +11,6 @@ import = [
 [window]
 padding = { x = 4, y = 2 }
 
-[font]
-normal = { family = "Iosevka Term", style = "Light" }
-bold = { family = "Iosevka Term", style = "Bold" }
-italic = { family = "Iosevka Term", style = "Light Italic" }
-bold_italic = { family = "Iosevka Term", style = "Bold Italic" }
-size = 14.0
-
 [keyboard]
 bindings = [
   # Move cursor left and right by word
