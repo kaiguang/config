@@ -1,7 +1,6 @@
-I use Cursor more often now so it has the latest cSpell dictionary and configurations.
+Commands to enable key repeat for VSCode or Kiro.
 
-Enable Cursor key repeat, run below command and restart Cursor.
-
-```sh
-defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
+```shell
+defaults write dev.kiro.desktop ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ```

@@ -1,0 +1,53 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "kiroAgent.trust.defaultScope": "user",
+  "window.autoDetectColorScheme": true,
+  "window.density.editorTabHeight": "compact",
+  "workbench.preferredDarkColorTheme": "Kiro Dark",
+  "workbench.preferredLightColorTheme": "Kiro Light",
+  "workbench.tree.indent": 24,
+
+  "vim.easymotion": true,
+  "vim.highlightedyank.color": "#FFFF00",
+  "vim.highlightedyank.duration": 300,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<Space>",
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-r>": false,
+    "<C-w>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Move cursor with word wrap and region fold
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
+    // Split editors
+    { "before": ["leader", "%"], "commands": ["workbench.action.splitEditor"] },
+    {
+      "before": ["leader", "\""],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    // Fold
+    { "before": ["leader", "z"], "commands": ["editor.foldAll"] },
+    { "before": ["leader", "Z"], "commands": ["editor.unfoldAll"] },
+    // Code actions
+    { "before": ["g", "f"], "commands": ["editor.action.goToReferences"] },
+    { "before": ["g", "r"], "commands": ["editor.action.rename"] },
+    // EasyMotion
+    { "before": ["leader", "s"], "after": ["leader", "leader", "s"] },
+    { "before": ["leader", "w"], "after": ["leader", "leader", "w"] },
+    { "before": ["leader", "b"], "after": ["leader", "leader", "b"] }
+  ],
+  "vim.insertModeKeyBindings": [],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // Move cursor with word wrap and region fold
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
+    // No newline at the end
+    { "before": ["$"], "after": ["g", "_"] },
+    // Paste without overriding the current register
+    { "before": ["p"], "after": ["p", "g", "v", "y"] }
+  ]
+}

@@ -27,14 +27,5 @@
   {
     "key": "cmd+,",
     "command": "-workbench.action.openSettings"
-  },
-  {
-    "key": "cmd+i",
-    "command": "composerMode.agent"
-  },
-  {
-    "key": "shift+cmd+k",
-    "command": "editor.action.deleteLines",
-    "when": "editorTextFocus && !editorReadonly"
   }
 ]
