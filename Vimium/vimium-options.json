@@ -1,8 +1,4 @@
 {
-  "keyMappings": "map F LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-f> LinkHints.activateModeToOpenInNewTab\n\nmap J scrollPageDown\nmap K scrollPageUp\nmap H previousTab\nmap L nextTab",
-  "linkHintCharacters": "fjdkslaghtybnruvmecwxqp",
-  "grabBackFocus": true,
-  "settingsVersion": "2.3.1",
   "exclusionRules": [
     {
       "passKeys": "",
@@ -40,5 +36,10 @@
       "passKeys": "",
       "pattern": "https?://www.notion.so/*"
     }
-  ]
+  ],
+  "grabBackFocus": true,
+  "keyMappings": "map F LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-f> LinkHints.activateModeToOpenInNewTab\n\nmap J scrollPageDown\nmap K scrollPageUp\nmap H previousTab\nmap L nextTab",
+  "linkHintCharacters": "fjdkslaghtybnruvmecwxqp",
+  "newTabDestination": "browserNewTabPage",
+  "settingsVersion": "2.4.2"
 }
