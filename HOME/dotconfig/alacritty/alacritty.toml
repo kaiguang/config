@@ -16,4 +16,7 @@ bindings = [
   # Move cursor left and right by word
   { key = "Right", mods = "Alt", chars = "\u001BF" },
   { key = "Left",  mods = "Alt", chars = "\u001BB" },
+
+  # Shift + Enter for Claude Code
+  { key = "Return",  mods = "Shift", chars = "\u001B\r" },
 ]
