@@ -46,7 +46,16 @@
         { "type": "basic", "from": { "key_code": "1", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "software_function": { "set_mouse_cursor_position": { "x": "50%", "y": "50%", "screen": 0 } } }] },
         { "type": "basic", "from": { "key_code": "2", "modifiers": { "mandatory": ["right_command"] } }, "to": [{ "software_function": { "set_mouse_cursor_position": { "x": "50%", "y": "50%", "screen": 1 } } }] },
 
-        // VSCode, Cursor: copy relative path of active file
+        // VSCode, Cursor: copy path of active file
+        {
+          "type": "basic",
+          "from": { "key_code": "o", "modifiers": { "mandatory": ["right_command"] } },
+          "to": [
+            { "key_code": "k", "modifiers": ["left_command"] },
+            { "key_code": "c", "modifiers": ["left_command", "left_option"] }
+          ],
+          "conditions": [{ "type": "frontmost_application_if", "bundle_identifiers": ["com.microsoft.VSCode", "com.todesktop.230313mzl4w4u92"] }]
+        },
         {
           "type": "basic",
           "from": { "key_code": "p", "modifiers": { "mandatory": ["right_command"] } },
