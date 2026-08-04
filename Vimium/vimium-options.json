@@ -39,7 +39,7 @@
   ],
   "grabBackFocus": true,
   "keyMappings": "map F LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-f> LinkHints.activateModeToOpenInNewTab\n\nmap J scrollPageDown\nmap K scrollPageUp\nmap H previousTab\nmap L nextTab",
-  "linkHintCharacters": "fjdkslaghtybnruvmecwxqp",
+  "linkHintCharacters": "fjdkslgharueiwovncmx",
   "newTabDestination": "browserNewTabPage",
   "settingsVersion": "2.4.2"
 }
