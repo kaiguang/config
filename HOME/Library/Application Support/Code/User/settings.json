@@ -51,10 +51,10 @@
 
   "window.autoDetectColorScheme": true,
   "window.density.editorTabHeight": "compact",
+  "workbench.editor.useModal": "off",
   "workbench.editor.wrapTabs": true,
-  "workbench.editorAssociations": {
-    "git-rebase-todo": "default"
-  },
+  "workbench.editorAssociations": { "git-rebase-todo": "default" },
+  "workbench.experimental.modernUI": true,
   "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 24,
@@ -417,6 +417,7 @@
     "neilzon",
     "neoformat",
     "neovim",
+    "neru",
     "netrw",
     "nextjs",
     "nezha",
@@ -625,5 +626,15 @@
     "zixuan",
     "zoey",
     "zstyle"
-  ]
+  ],
+  "json.schemaDownload.trustedDomains": {
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://raw.githubusercontent.com": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://www.schemastore.org/": true
+  }
 }
