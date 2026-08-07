@@ -40,6 +40,7 @@ text = "#E8EEFF"
 "Primary+Shift+Ctrl+Alt+H" = "grid"
 "Primary+Shift+Ctrl+Alt+R" = "recursive_grid"
 "Primary+Shift+Ctrl+Alt+J" = "scroll"
+"Primary+Shift+Ctrl+Alt+P" = "monitor_select"
 
 # Hint mode
 # See https://github.com/y3owk1n/neru/blob/main/docs/CONFIGURATION.md#hints
@@ -88,7 +89,7 @@ visible_check_enabled = false
 
 [hints.ui]
 font_size = 10
-font_family = ""                            # Empty = system font
+font_family = "Menlo"                            # Empty = system font
 border_radius = -1                          # -1 = auto pill
 padding_x = -1                              # -1 = auto based on font size
 padding_y = -1                              # -1 = auto based on font size
@@ -97,7 +98,7 @@ placement = "bottom"                        # top, center, bottom
 
 [hints.search_input_ui]
 font_size = 10
-font_family = ""                            # Empty = system font
+font_family = "Menlo"                            # Empty = system font
 border_radius = -1                          # -1 = auto pill
 padding_x = -1                              # -1 = auto based on font size
 padding_y = -1                              # -1 = auto based on font size
@@ -137,8 +138,10 @@ generic_clickable_min_confidence = 0.5       # Minimum confidence for generic cl
 # See https://github.com/y3owk1n/neru/blob/main/docs/CONFIGURATION.md#grid
 [grid]
 enabled = true
-characters = "abcdefghijklmnpqrstuvwxyz"    # Primary grid labels
+characters = "fjdkslgharueiwovncmx"    # Primary grid labels
 sublayer_keys = "wersdfxcv"                 # Subgrid labels (fallback to characters)
+row_labels = ""
+col_labels = ""
 live_match_update = true                    # Highlight cells as you type
 hide_unmatched = true                       # Hide non-matching cells
 prewarm_enabled = true                      # Pre-compute grid on startup (~1.5MB RAM)
@@ -164,8 +167,8 @@ enable_gc = false                           # Periodic memory cleanup (adds CPU 
 "Shift+Right" = "action move_mouse_relative --dx=40 --dy=0"
 
 [grid.ui]
-font_size = 10
-font_family = ""
+font_size = 14
+font_family = "Menlo"
 border_width = 1
 
 # Recursive grid mode (recommended)
@@ -205,7 +208,7 @@ duration_ms = 50                            # Recursive-grid animation duration 
 [recursive_grid.ui]
 line_width = 1
 font_size = 10
-font_family = ""
+font_family = "Menlo"
 label_background = false                    # Add rounded backgrounds behind cell labels
 label_background_padding_x = -1
 label_background_padding_y = -1
@@ -223,7 +226,7 @@ sub_key_preview_label_char = "·"            # Override sub-key preview labels w
 [virtual_pointer.ui]
 char = "●"             # Character to display (e.g. "•", "●", "◉", "⬤") or anything you like
 font_size = 6
-font_family = ""
+font_family = "Menlo"
 text_color = "#FF0000"
 
 # Mouse action indicator (macOS)
@@ -248,14 +251,14 @@ easing = "ease_out"                         # linear, ease_in, ease_out, ease_in
 # Monitor select mode
 # See https://github.com/y3owk1n/neru/blob/main/docs/CONFIGURATION.md#monitor_select
 [monitor_select]
-enabled = false                                # Enable interactive monitor picking mode
+enabled = true                                # Enable interactive monitor picking mode
 characters = "123456789"                       # Characters used for monitor labels
 
 [monitor_select.ui]
 font_size = 96                                 # Badge label font size
-font_family = ""                               # Badge label font family
+font_family = "Menlo"                          # Badge label font family
 subtitle_font_size = 18                        # Monitor name subtitle font size
-subtitle_font_family = ""                      # Subtitle font family
+subtitle_font_family = "Menlo"                 # Subtitle font family
 border_radius = -1                             # Badge corner radius (-1 = auto)
 padding_x = -1                                 # Badge horizontal padding (-1 = auto)
 padding_y = -1                                 # Badge vertical padding (-1 = auto)
@@ -306,7 +309,10 @@ invert_scroll = false                       # Invert scroll direction (for tools
 
 [mode_indicator.scroll]
 enabled = true
-text = "Scroll"
+text = "👆"
+text_color = "#FFFFFF"
+background_color = "#A020F0"
+border_color = "#A020F0"
 
 [mode_indicator.hints]
 enabled = false
@@ -325,8 +331,8 @@ enabled = false
 text = "Monitor Select"
 
 [mode_indicator.ui]
-font_size = 10
-font_family = ""
+font_size = 14
+font_family = "Menlo"
 border_width = 1
 padding_x = -1
 padding_y = -1
@@ -342,7 +348,7 @@ tap_max_duration = 300
 
 [sticky_modifiers.ui]
 font_size = 10
-font_family = ""
+font_family = "Menlo"
 border_width = 1
 padding_x = -1
 padding_y = -1
