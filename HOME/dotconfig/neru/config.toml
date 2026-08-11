@@ -309,10 +309,10 @@ invert_scroll = false                       # Invert scroll direction (for tools
 
 [mode_indicator.scroll]
 enabled = true
-text = "👆"
-text_color = "#FFFFFF"
-background_color = "#A020F0"
-border_color = "#A020F0"
+text = "-"
+text_color = "#000000"
+background_color = "#FF0000"
+border_color = "#FF0000"
 
 [mode_indicator.hints]
 enabled = false
