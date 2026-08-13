@@ -86,6 +86,7 @@ visible_check_enabled = false
 "Shift+Down" = "action move_mouse_relative --dx=0 --dy=40"
 "Shift+Left" = "action move_mouse_relative --dx=-40 --dy=0"
 "Shift+Right" = "action move_mouse_relative --dx=40 --dy=0"
+"Z" = "hints"
 
 [hints.ui]
 font_size = 10
