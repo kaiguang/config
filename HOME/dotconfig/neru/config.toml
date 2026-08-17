@@ -89,7 +89,7 @@ visible_check_enabled = false
 "Z" = "hints"
 
 [hints.ui]
-font_size = 14
+font_size = 10
 font_family = "Menlo"                            # Empty = system font
 border_radius = -1                          # -1 = auto pill
 padding_x = -1                              # -1 = auto based on font size
@@ -98,7 +98,7 @@ border_width = 1
 placement = "bottom"                        # top, center, bottom
 
 [hints.search_input_ui]
-font_size = 14
+font_size = 10
 font_family = "Menlo"                            # Empty = system font
 border_radius = -1                          # -1 = auto pill
 padding_x = -1                              # -1 = auto based on font size
@@ -168,7 +168,7 @@ enable_gc = false                           # Periodic memory cleanup (adds CPU 
 "Shift+Right" = "action move_mouse_relative --dx=40 --dy=0"
 
 [grid.ui]
-font_size = 14
+font_size = 12
 font_family = "Menlo"
 border_width = 1
 
@@ -332,7 +332,7 @@ enabled = false
 text = "Monitor Select"
 
 [mode_indicator.ui]
-font_size = 14
+font_size = 10
 font_family = "Menlo"
 border_width = 1
 padding_x = -1
