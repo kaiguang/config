@@ -89,7 +89,7 @@ visible_check_enabled = false
 "Z" = "hints"
 
 [hints.ui]
-font_size = 10
+font_size = 14
 font_family = "Menlo"                            # Empty = system font
 border_radius = -1                          # -1 = auto pill
 padding_x = -1                              # -1 = auto based on font size
@@ -98,7 +98,7 @@ border_width = 1
 placement = "bottom"                        # top, center, bottom
 
 [hints.search_input_ui]
-font_size = 10
+font_size = 14
 font_family = "Menlo"                            # Empty = system font
 border_radius = -1                          # -1 = auto pill
 padding_x = -1                              # -1 = auto based on font size
@@ -310,7 +310,7 @@ invert_scroll = false                       # Invert scroll direction (for tools
 
 [mode_indicator.scroll]
 enabled = true
-text = "-"
+text = "Scroll"
 text_color = "#000000"
 background_color = "#FF0000"
 border_color = "#FF0000"
