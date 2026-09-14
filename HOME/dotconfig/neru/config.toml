@@ -38,7 +38,7 @@ text = "#E8EEFF"
 [hotkeys]
 "Primary+Shift+Ctrl+Alt+Space" = "hints"
 "Primary+Shift+Ctrl+Alt+H" = "grid"
-"Primary+Shift+Ctrl+Alt+R" = "recursive_grid"
+"Primary+Shift+Ctrl+Alt+i" = "recursive_grid"
 "Primary+Shift+Ctrl+Alt+J" = "scroll"
 "Primary+Shift+Ctrl+Alt+P" = "monitor_select"
 
@@ -47,7 +47,7 @@ text = "#E8EEFF"
 [hints]
 enabled = true
 strategy = "axtree"                         # Element detection: "axtree" (AX API) or "vision" (Vision Framework)
-hint_characters = "fjdkslgharueiwovncmx"    # Characters used for hint labels
+hint_characters = "fdkslgharueiwovncmx"     # Characters used for hint labels
 label_direction = "normal"                  # Hint label algorithm: "normal" (default) or "reverse"
 max_depth = 50                              # Max accessibility tree depth (0 = unlimited)
 include_menubar_hints = false
@@ -86,10 +86,11 @@ visible_check_enabled = false
 "Shift+Down" = "action move_mouse_relative --dx=0 --dy=40"
 "Shift+Left" = "action move_mouse_relative --dx=-40 --dy=0"
 "Shift+Right" = "action move_mouse_relative --dx=40 --dy=0"
+"J" = "scroll"
 "Z" = "hints"
 
 [hints.ui]
-font_size = 10
+font_size = 12
 font_family = "Menlo"                            # Empty = system font
 border_radius = -1                          # -1 = auto pill
 padding_x = -1                              # -1 = auto based on font size
@@ -139,7 +140,7 @@ generic_clickable_min_confidence = 0.5       # Minimum confidence for generic cl
 # See https://github.com/y3owk1n/neru/blob/main/docs/CONFIGURATION.md#grid
 [grid]
 enabled = true
-characters = "fjdkslgharueiwovncmx"    # Primary grid labels
+characters = "fdkslgharueiwovncmx"    # Primary grid labels
 sublayer_keys = "wersdfxcv"                 # Subgrid labels (fallback to characters)
 row_labels = ""
 col_labels = ""
@@ -166,6 +167,8 @@ enable_gc = false                           # Periodic memory cleanup (adds CPU 
 "Shift+Down" = "action move_mouse_relative --dx=0 --dy=40"
 "Shift+Left" = "action move_mouse_relative --dx=-40 --dy=0"
 "Shift+Right" = "action move_mouse_relative --dx=40 --dy=0"
+"J" = "scroll"
+"Z" = "grid"
 
 [grid.ui]
 font_size = 12
@@ -305,7 +308,7 @@ invert_scroll = false                       # Invert scroll direction (for tools
 "Shift+Down" = "action move_mouse_relative --dx=0 --dy=40"
 "Shift+Left" = "action move_mouse_relative --dx=-40 --dy=0"
 "Shift+Right" = "action move_mouse_relative --dx=40 --dy=0"
-"z" = "recursive_grid"
+"z" = "hints"
 
 # Mode indicator
 # See https://github.com/y3owk1n/neru/blob/main/docs/CONFIGURATION.md#mode_indicator

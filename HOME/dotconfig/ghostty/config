@@ -1,1 +1,3 @@
-theme = "light:Catppuccin Latte,dark:Catppuccin Macchiato"
+theme = "light:Alabaster,dark:Ghostty Default Style Dark"
+keybind = super+shift+j=scroll_page_fractional:0.5
+keybind = super+shift+k=scroll_page_fractional:-0.5
