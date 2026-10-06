@@ -2,11 +2,21 @@
   "title": "Kai",
   "rules": [
     {
+      "description": "Simultaneous shifts to caps lock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "simultaneous": [{ "key_code": "left_shift" }, { "key_code": "right_shift" }], "modifiers": { "optional": ["any"] } },
+          "to": [{ "key_code": "caps_lock" }]
+        }
+      ]
+    },
+    {
       "description": "Caps lock to hyper and escape",
       "manipulators": [
         {
           "type": "basic",
-          "from": { "key_code": "caps_lock" },
+          "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
           "to": [{ "key_code": "left_shift", "modifiers": ["left_command", "left_control", "left_option"], "lazy": true }],
           "to_if_alone": [{ "key_code": "escape" }],
           "parameters": { "basic.to_if_alone_timeout_milliseconds": 500 }
@@ -18,7 +28,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": { "key_code": "right_command" },
+          "from": { "key_code": "right_command", "modifiers": { "optional": ["any"] } },
           "to": [{ "key_code": "left_control", "modifiers": [], "lazy": true }],
           "to_if_alone": [{ "key_code": "escape" }],
           "parameters": { "basic.to_if_alone_timeout_milliseconds": 500 }
